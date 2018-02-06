@@ -1,6 +1,6 @@
 # Welcome to CRentalBikes
 
- This is a project development on **spring-boot**.
+ This is a **spring-boot** project.
 
 ## The design
 
