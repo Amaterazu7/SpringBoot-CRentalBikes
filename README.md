@@ -7,7 +7,7 @@ Furthermore, I suggest running this development as spring boot application which
 
 This design is a spring boot REST + JPA + hibernate + MySQL example. Here I created a REST application that  be perform CRUD operation using MySQL. Spring boot provides default database configurations when it scans Spring Data JPA in classpath. Spring boot uses spring-boot-starter-data-jpa starter to configure spring JPA with hibernate. For data source I was need to configure data source properties starting with **spring.datasource.** in **application.properties** and then spring boot JPA will configure data source automatically. To run the application I created a class with main() method that be call SpringApplication.run() to start the application with embedded tomcat. The class with main() method was annotated with @SpringBootApplication.
 
-## development practices applied
+## Development practices applied
 
 El desarrollo lo realicé sobre una arquitectura MVC. Para así, separar la lógica de los Controladores que mapean las consultas REST, el Modelo de datos usando Spring Data Repositories para la persistencia de los datos y consultas y, la Vista sobre jsp, la cual le adicione AngularJS y Bootswatch. Además para realizar algunos test use TDD (llegando a un Coverage del 28% sobre los ControllersRest) con JUnit y Mockito.
 > **Nota:** Todo lo que aplique de test es exclusivamente reciente ya que nunca realice estos test en el marco laboral, lo que ví fue exclusivamente académico y algo más por investigación propia.
