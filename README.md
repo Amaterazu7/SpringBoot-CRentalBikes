@@ -1,11 +1,11 @@
 # Spring boot CRentalBikes
 
-This development was created in spring-boot. In order to visualise it I suggest creating a database MySQL called "**test**", All data source settings are found in the **application.properties** of the project, in case to be needed. 
+This development was created in spring-boot. In order to visualise it I suggest creating a database MySQL called "**test**", all data source settings are found in the **application.properties** of the project, in case to be needed. 
 Furthermore, I suggest running this development as spring boot application which will be defaultly visualised from this link "http://localhost:8080/" once there, you will need to go to the section **pack** ("http://localhost:8080/pack") and generate the 3 packs with its appropriate data and prizes, for example: "Rental by hour, Rental by day &Rental by week". Finally, you will generate at least one or two **customers** from its selection ("http://localhost:8080/customer"). 
 
 ## Development practices applied
 
-This development was created through MVC architecture so in that way I could separate the logic of the controllers that mapping request REST, the data model using Spring Data Repositories to data and requests persistence and the view through jsp, which will perform angular and bootswatch operation.
+This development was created through MVC architecture, so in that way I could separate the logic of the controllers that mapping request REST, the data model using Spring Data JPA Repositories to data and requests persistence and the view through jsp, which will perform angular and bootswatch operation.
 
 ## The Design
 
