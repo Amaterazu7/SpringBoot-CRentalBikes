@@ -5,7 +5,7 @@ Este es un proyecto creado en **spring-boot**. Para su visualización sugiero qu
 
 ## El diseño
 
-This design is a spring boot REST + JPA + hibernate + MySQL example. Here I created a REST application that  be perform CRUD operation using MySQL. Spring boot provides default database configurations when it scans Spring Data JPA in classpath. Spring boot uses spring-boot-starter-data-jpa starter to configure spring JPA with hibernate. For data source I needed to configure data source properties starting with **spring.datasource.** in **application.properties** and spring boot JPA will configure data source automatically. To run the application I created a class with main() method that be call SpringApplication.run() to start the application with embedded tomcat. The class with main() method was annotated with @SpringBootApplication.
+This design is a spring boot REST + JPA + hibernate + MySQL example. Here I created a REST application that  be perform CRUD operation using MySQL. Spring boot provides default database configurations when it scans Spring Data JPA in classpath. Spring boot uses spring-boot-starter-data-jpa starter to configure spring JPA with hibernate. For data source I was need to configure data source properties starting with **spring.datasource.** in **application.properties** and then spring boot JPA will configure data source automatically. To run the application I created a class with main() method that be call SpringApplication.run() to start the application with embedded tomcat. The class with main() method was annotated with @SpringBootApplication.
 
 ## Las prácticas aplicadas
 
