@@ -107,10 +107,10 @@ public class CustomerRestControllerTests {
 		Customer customer = new Customer(2, "Diego Crescini", 34963658, pack, 5, true, 30, 100, day);
 		
 		Customer customerWBenefits = customerController.addBenefits(customer);
-		float disc = (float) (customer.getDiscount()/100);
-		disc = disc*customer.getPrice();
+		float disc = (float) (customer.getDiscount());
+		disc = (float) (disc/100)*customer.getPrice();
 		float finalPrice = (float) (customer.getPrice()-disc);
-		
+		customer.setPrice((int)finalPrice);
 		customer.setPrice((int)finalPrice);
 		
 		assertThat(customerWBenefits.getPrice()).isEqualTo(customer.getPrice());
