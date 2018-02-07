@@ -9,8 +9,8 @@ This development was created through MVC architecture so in that way I could sep
 
 ## The Design
 
-This design is a spring boot REST + JPA + hibernate + MySQL example. Here I created a REST application that be perform CRUD operation using MySQL. Spring boot provides default database configurations when it scans Spring Data JPA in classpath. Spring boot uses spring-boot-starter-data-jpa starter to configure spring JPA with hibernate. For data source I was need to configure data source properties starting with **spring.datasource.** in **application.properties** and then spring data JPA will configure data source automatically and I worked with an Interface for each model with the structure heredated by CrudRepository. To run the application I created a class with main() method that be call SpringApplication.run() to start the application with embedded tomcat. The class with main() method was annotated with @SpringBootApplication.
-	
+This design is a spring boot REST + JPA + hibernate + MySQL development. Here I created a REST application that performs CRUD operation using MySQL. Spring boot provides default database configurations when it scans Spring Data JPA in classpath. Spring boot uses spring-boot-starter-data-jpa, starter to configure spring JPA with hibernate. For data source I needed to configure data source properties starting with **spring.datasource.*** in **application.properties** and then spring boot JPA will configure data source automatically and then I worked with an Interface for each model with the structure heredated by CrudRepository. To run the application I created a class with main() method that is called SpringApplication.run() to start the application with embedded tomcat. The class with main() method was annotated with @SpringBootApplication.
+
 ## How to run the tests?
 
 To run the tests I suggest executing the application and adding all data to it. There are also some data that work as entries to the tests and can be configured in **test*.java**. In addition to this, to run some of the tests I used TDD (up to a %28 of coverage over the controllersREST) with JUnit y Mockito.
