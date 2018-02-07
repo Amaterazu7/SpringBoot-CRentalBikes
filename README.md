@@ -5,7 +5,7 @@ Furthermore, I suggest running this development as spring boot application which
 
 ## The Design
 
-This design is a spring boot REST + JPA + hibernate + MySQL example. Here I created a REST application that  be perform CRUD operation using MySQL. Spring boot provides default database configurations when it scans Spring Data JPA in classpath. Spring boot uses spring-boot-starter-data-jpa starter to configure spring JPA with hibernate. For data source I was need to configure data source properties starting with **spring.datasource.** in **application.properties** and then spring boot JPA will configure data source automatically. To run the application I created a class with main() method that be call SpringApplication.run() to start the application with embedded tomcat. The class with main() method was annotated with @SpringBootApplication.
+This design is a spring boot REST + JPA + hibernate + MySQL example. Here I created a REST application that be perform CRUD operation using MySQL. Spring boot provides default database configurations when it scans Spring Data JPA in classpath. Spring boot uses spring-boot-starter-data-jpa starter to configure spring JPA with hibernate. For data source I was need to configure data source properties starting with **spring.datasource.** in **application.properties** and then spring data JPA will configure data source automatically and I worked with an Interfaces with the structure heredated by CrudRepository. To run the application I created a class with main() method that be call SpringApplication.run() to start the application with embedded tomcat. The class with main() method was annotated with @SpringBootApplication.
 
 ## Development practices applied
 
@@ -14,4 +14,4 @@ El desarrollo lo realicé sobre una arquitectura MVC. Para así, separar la lóg
 	
 ## How Run the tests?
 
-Para correr los test, yo sugiero que se ejecute la aplicación y se agreguen datos a la misma. Por otro lado, también hay algunos datos que funcionan como entradas de las pruebas a realizar y se pueden modificar desde los archivos test*.java. 
+To run the tests I suggest executing the application and adding all data to it. There are also some data that work as entries to the tests and can be configured in **test*.java**.
