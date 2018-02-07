@@ -86,7 +86,7 @@ public class PackRestControllerTests {
 	}
 	
 	@Test
-	public void testUpdateCustomer() throws Exception {
+	public void testUpdatePack() throws Exception {
 		Pack pack = new Pack(2, 20, "2", "Rental by Day");
 		when(packService.findById(2)).thenReturn(pack);
 		doNothing().when(packService).updatePack(pack);
